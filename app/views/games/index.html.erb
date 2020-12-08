@@ -1,7 +1,18 @@
 <div class="main-container">
-
-    <%= link_to "ブロック崩し", games_block_break_path %>
-    <%= link_to "テトリス", games_tetris_path %>
-    <%= link_to "オセロ", games_osero_path %>
-  
+<div class="intro"></div>
+<div class="retro-games">レトロなゲームたち</div>
+<div class="games">
+    <%= link_to "ブロック崩し", games_block_break_path, class:"game-title" %>
+    <%= link_to "テトリス", games_tetris_path, class:"game-title"%>
+    <%= link_to "オセロ", games_osero_path, class:"game-title"%>
+    <%= link_to "スネークゲーム", games_snake_path, class:"game-title"%>
+    <%= link_to "鬼ジャンプ", games_jump_path, class:"game-title"%>
+</div>
+<div class="games">
+    <%= image_tag "https://i.gyazo.com/ea379bbc6b5b2c5f8cd621d35040dd78.gif" %>
+    <%= image_tag "ramen2.jpg" %>
+    <%= image_tag "ramen.jpg" %>
+    <%= image_tag "https://i.gyazo.com/faf480b57bad68a541499f647e34a082.gif" %>
+    <%= image_tag "https://i.gyazo.com/c29ffce2caa7e5bf92c179205736e1c3.gif" %>
+</div>
 </div>
