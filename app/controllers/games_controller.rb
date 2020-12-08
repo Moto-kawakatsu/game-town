@@ -14,4 +14,10 @@ class GamesController < ApplicationController
   def tetris
   end
 
+  def snake
+  end
+
+  def jump
+  end
+
 end
