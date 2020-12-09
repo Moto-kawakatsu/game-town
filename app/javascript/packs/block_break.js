@@ -1,3 +1,5 @@
+console.log(window.confirm('ゲームスタート！準備はいい？'));
+
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 let ballRadius = 10;
