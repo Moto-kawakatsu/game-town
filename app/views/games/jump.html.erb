@@ -40,8 +40,7 @@
             block.style.animation = "block 1s infinite linear";
         }else{
             counter++;
-            let point = document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
-            console.log(point);
+            document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
         }   
     }, 10);</script>
 </html>
