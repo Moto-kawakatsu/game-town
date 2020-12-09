@@ -15,7 +15,9 @@
     </div>
     <p class="score">Score: <span id="scoreSpan"></span></p>
 </body>
-<script>let character = document.getElementById("character");
+<script>
+    console.log(window.confirm('Are you ready？'));
+    let character = document.getElementById("character");
     let block = document.getElementById("block");
     let counter=0;
     function jump(){
@@ -30,12 +32,16 @@
         let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
         if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
             block.style.animation = "none";
-            alert("Game Over. score: "+Math.floor(counter/100));
+            if (Math.floor(counter/100) < 5 ) {
+                alert("Too Bad. score: "+Math.floor(counter/100));
+            }
+                console.log(window.confirm('Are you ready?'));
             counter=0;
             block.style.animation = "block 1s infinite linear";
         }else{
             counter++;
-            document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
-        }
+            let point = document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+            console.log(point);
+        }   
     }, 10);</script>
 </html>
